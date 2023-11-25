@@ -9,9 +9,76 @@
   <meta charset="UTF-8" />
   <link rel="canonical" href="https://parnell.utf9k.net" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-  <meta name="description" content="An interactive visualisation showing parking tickets issued in Parnell, Auckland, New Zealand" />
+  <meta name="description"
+    content="An interactive visualisation showing parking tickets issued in Parnell, Auckland, New Zealand" />
   <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" />
-  <link rel="stylesheet" href="/style.css" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica, Arial, Sans-serif;
+    }
+
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    h1 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    h2 {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #2dc4b2;
+    }
+
+    #console {
+      position: absolute;
+      width: 300px;
+      margin: 10px;
+      padding: 10px 20px;
+      background: rgb(255, 255, 255, 0.75);
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
+    .session {
+      margin-bottom: 20px;
+    }
+
+    .row {
+      height: 12px;
+      width: 100%;
+    }
+
+    .colors {
+      background: linear-gradient(to right,
+          #2dc4b2,
+          #3bb3c3,
+          #669ec4,
+          #8b88b6,
+          #a2719b,
+          #aa5e79);
+      margin-bottom: 5px;
+    }
+
+    .label {
+      width: 15%;
+      display: inline-block;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
@@ -54,7 +121,7 @@
     </div>
   </div>
   <script type="text/javascript" src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js" defer></script>
-  <script type="text/javascript" src="/parnell.js" defer></script>
+  <script src="./parnell.js" type="module" defer></script>
 </body>
 
 </html>

@@ -1,0 +1,18 @@
+{
+  "name": "parnell.utf9k.net",
+  "module": "index.ts",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "vite": "^5.0.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
