@@ -1,4 +1,7 @@
-window.mapboxgl.accessToken =
+import mapboxgl from 'mapbox-gl'
+import 'mapbox-gl/dist/mapbox-gl.css'
+
+mapboxgl.accessToken =
   "pk.eyJ1IjoibWFyY3VzLWNyYW5lIiwiYSI6ImNqN3loaHNvdzQ0YzAzM3FyNW1mMndrMXoifQ.b7E6hbK1eDrXOQVrwnc8zQ";
 
 const lightStyle = "mapbox://styles/mapbox/light-v9";
@@ -13,7 +16,7 @@ if (
   defaultStyle = darkStyle;
 }
 
-let map = new window.mapboxgl.Map({
+let map = new mapboxgl.Map({
   container: "map",
   style: defaultStyle,
   center: [174.789296, -36.860538],
